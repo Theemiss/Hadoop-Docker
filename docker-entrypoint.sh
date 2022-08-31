@@ -17,12 +17,8 @@ fi
 
 
 $HADOOP_HOME/bin/hdfs dfsadmin -safemode leave
+sudo rm -rf /root/.bash_history;
 
 # keep the container running indefinitely
-# tail -f $HADOOP_HOME/logs/hadoop-*-namenode-*.log
-rm -rf /root/.bash_history;
+tail -f $HADOOP_HOME/logs/hadoop-*-namenode-*.log
 
-while true
-do
-  /usr/sbin/sshd -D
-done
