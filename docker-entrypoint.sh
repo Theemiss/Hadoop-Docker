@@ -22,3 +22,5 @@ sudo rm -rf /root/.bash_history;
 # keep the container running indefinitely
 tail -f $HADOOP_HOME/logs/hadoop-*-namenode-*.log
 
+
+

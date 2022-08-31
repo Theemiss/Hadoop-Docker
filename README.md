@@ -20,7 +20,8 @@ Change **container-name** by your favorite name and set **your-hostname** with b
 
 To run it interactively you can use this command:
 ```bash
-$ docker run --name <container_name> -p 9864:9864 -p 9870:9870 -p 8088:8088 -p 9000:9000 --hostname <hostname>  -it --entrypoint /bin/bash <image_name> 
+$ docker exec  -it <container_name>  /bin/bash
+hduser@myhdf:~$ 
 ```
 
 
