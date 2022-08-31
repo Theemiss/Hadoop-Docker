@@ -18,6 +18,12 @@ docker run --name <container-name> -p 9864:9864 -p 9870:9870 -p 8088:8088 -p 900
 ```
 Change **container-name** by your favorite name and set **your-hostname** with by your ip or name machine.
 
+To run it interactively you can use this command:
+```bash
+$ docker run --name <container_name> -p 9864:9864 -p 9870:9870 -p 8088:8088 -p 9000:9000 --hostname <hostname>  -it --entrypoint /bin/bash <image_name> 
+```
+
+
 To check if hadoop container is working:
 
 - go to the url in your browser: http://localhost:9870
