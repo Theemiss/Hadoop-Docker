@@ -51,6 +51,8 @@ COPY hdfs-site.xml $HADOOP_HOME/etc/hadoop/
 COPY yarn-site.xml $HADOOP_HOME/etc/hadoop/
 
 COPY docker-entrypoint.sh $HADOOP_HOME/etc/hadoop/
+RUN chmod u+x $HADOOP_HOME/etc/hadoop/docker-entrypoint.sh
+
 
 ENV PATH $PATH:$HADOOP_HOME/bin:$HADOOP_HOME/sbin
 
